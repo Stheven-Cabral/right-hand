@@ -1,15 +1,39 @@
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   display: flex;
+  /* height is needed for align-items. */
+  height: 100vh;
   align-items: center;
   justify-content: center;
+  background-color: red;
 }
 
 .hand {
   width: 640px;
   height: 320px;
+  position: relative;
+}
+
+.hand::before {
+  position: absolute;
+  content:"";
+  background-color: black;
+  height: 180px;
+  width: 560px;
+  border-radius: 160px 40px;
+  top: 150px;
+  filter: blur(40px) opacity(0.3);
+}
+
+.palm {
+  position: absolute;
+  background-color: #E0AC69;
+  border-radius: 40px 160px;
+  height: 240px;
+  width: 320px;
+  right: 0px;
 }
