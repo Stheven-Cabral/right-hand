@@ -8,3 +8,8 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+.hand {
+  width: 640px;
+  height: 320px;
+}
