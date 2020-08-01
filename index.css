@@ -37,3 +37,13 @@ body {
   width: 320px;
   right: 0px;
 }
+
+.thumb {
+  position: absolute;
+  background-color: #b88e57;
+  height: 125px;
+  width: 380px;
+  border-radius: 120px 80px 80px 40px;
+  bottom: 50px;
+  right: -4px;
+}
