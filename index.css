@@ -41,9 +41,13 @@ body {
 .thumb {
   position: absolute;
   background-color: #b88e57;
-  height: 125px;
+  height: 128px;
   width: 380px;
   border-radius: 120px 80px 80px 40px;
   bottom: 50px;
   right: -4px;
+  transform: rotate(-20deg);
+  transform-origin: 280px 71px;
+  border-bottom: solid 7px rgba(0, 0, 0, 0.3);
+  border-left: solid 7px rgba(0, 0, 0, 0.3);
 }
