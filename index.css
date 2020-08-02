@@ -12,6 +12,18 @@ body {
   background-color: lightseagreen;
 }
 
+@keyframes tap {
+  0% {
+    transform: rotate(10deg) scale(var(--scale));
+  }
+  45% {
+    transform: rotate(45deg) scale(var(--scale));
+  }
+  100% {
+    transform: rotate(10deg) scale(var(--scale));
+  }
+}
+
 .hand {
   width: 640px;
   height: 320px;
@@ -77,6 +89,7 @@ body {
   transform-origin: 100% 80px;
   transform: rotate(10deg) scale(var(--scale));
   filter: brightness(calc(100% - (5 - var(--n)) * 10%));
+  animation: tap 2s;
 }
 
 .finger:nth-child(3) {
