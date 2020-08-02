@@ -72,5 +72,17 @@ body {
   width: 256px;
   background-color: #b88e57;
   right: 210px;
-  bottom: 170px;
+  bottom: 180px;
+}
+
+.finger::before {
+  content: "";
+  position: absolute;
+  background-color: #b88e57;
+  height: 110px;
+  width: 325px;
+  right: 130px;
+  top: 96px;
+  border-radius: 120px 80px;
+  transform: rotate(-60deg);
 }
