@@ -75,24 +75,24 @@ body {
   bottom: 180px;
   --scale: calc(1 - (5 - var(--n)) * 0.2);
   transform-origin: 100% 80px;
-  transform: rotate(100deg) scale(var(--scale));
+  transform: rotate(10deg) scale(var(--scale));
   filter: brightness(calc(100% - (5 - var(--n)) * 10%));
 }
 
 .finger:nth-child(3) {
-  --n: 3;
+  --n: 2;
 }
 
 .finger:nth-child(4) {
-  --n: 4;
+  --n: 3;
 }
 
 .finger:nth-child(5) {
-  --n: 5;
+  --n: 4;
 }
 
 .finger:nth-child(6) {
-  --n: 6;
+  --n: 5;
 }
 
 .finger::before {
@@ -104,6 +104,21 @@ body {
   right: 130px;
   top: 96px;
   border-radius: 120px 80px;
+  transform: rotate(-60deg);
+}
+
+.finger::after {
+  content: "";
+  height: 20px;
+  width: 82px;
+  position: absolute;
+  background-color: #b8823ce1;
+  border-radius: 100px 25px 25px 20px;
+  top: 200px;
+  right: 336px;
+  border-bottom: solid 2px rgba(255, 255, 255, 0.2);
+  border-right: solid 2px rgba(255, 255, 255, 0.2);
+  border-left: solid 2px rgba(255, 255, 255, 0.2);
   transform: rotate(-60deg);
 }
 
