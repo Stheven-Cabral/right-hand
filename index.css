@@ -65,3 +65,12 @@ body {
   border-right: solid 2px rgba(0, 0, 0, 0.2);
   border-left: solid 2px rgba(255, 255, 255, 0.2);
 }
+
+.finger {
+  position: absolute;
+  height: 135px;
+  width: 256px;
+  background-color: #b88e57;
+  right: 210px;
+  bottom: 170px;
+}
