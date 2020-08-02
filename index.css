@@ -9,7 +9,7 @@ body {
   height: 100vh;
   align-items: center;
   justify-content: center;
-  background-color: lightseagreen;
+  background-color:whitesmoke;
 }
 
 @keyframes tap {
@@ -39,15 +39,6 @@ body {
   border-radius: 160px 40px;
   top: 150px;
   filter: blur(40px) opacity(0.3);
-}
-
-.palm {
-  position: absolute;
-  background-color: #b88e57;
-  border-radius: 40px 160px;
-  height: 240px;
-  width: 320px;
-  right: 0px;
 }
 
 .thumb {
@@ -89,22 +80,23 @@ body {
   transform-origin: 100% 80px;
   transform: rotate(10deg) scale(var(--scale));
   filter: brightness(calc(100% - (5 - var(--n)) * 10%));
-  animation: tap 2s;
+  animation: tap 1.5s infinite;
+  animation-delay: calc((var(--n) * 2) * 0.1s);
 }
 
-.finger:nth-child(3) {
+.finger:nth-child(2) {
   --n: 2;
 }
 
-.finger:nth-child(4) {
+.finger:nth-child(3) {
   --n: 3;
 }
 
-.finger:nth-child(5) {
+.finger:nth-child(4) {
   --n: 4;
 }
 
-.finger:nth-child(6) {
+.finger:nth-child(5) {
   --n: 5;
 }
 
@@ -133,6 +125,15 @@ body {
   border-right: solid 2px rgba(255, 255, 255, 0.2);
   border-left: solid 2px rgba(255, 255, 255, 0.2);
   transform: rotate(-60deg);
+}
+
+.palm {
+  position: absolute;
+  background-color: #b88e57;
+  border-radius: 40px 160px;
+  height: 240px;
+  width: 320px;
+  right: 0px;
 }
 
 
